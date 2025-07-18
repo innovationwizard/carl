@@ -30,7 +30,14 @@ export class PineconeService {
         includeMetadata: true,
       });
 
-      return results.matches || [];
+      //
+
+      // Map to my interface, handling undefined scores
+      return (results.matches || []).map(match => ({
+        id: match.id,
+        score: match.score || 0,
+        metadata: match.metadata || {}
+      }));
     } catch (error) {
       console.error('Pinecone search error:', error);
       return [];
