@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { ChatRequest, ChatResponse } from '@/types/chat';
 import { RAGService } from '@/lib/rag/ragService';
 import { OpenAIService } from '@/lib/openai/openaiService';
+import { supabase } from '@/lib/supabase/client'
 import { writeFileSync, appendFileSync } from 'fs';
 import { join } from 'path';
 
@@ -30,24 +31,22 @@ export async function POST(request: NextRequest) {
       history.slice(-10) // Keep last 10 messages for context
     );
 
-    // Log conversation for debugging/demo
-    try {
-      const logEntry = {
-        timestamp: new Date().toISOString(),
-        conversationId,
-        userMessage: message,
-        carlResponse: response,
-        sources: context.sources,
-      };
-      
-      const logPath = join(process.cwd(), 'logs', 'conversations.txt');
-      const logLine = `\n[${logEntry.timestamp}] Conversation: ${conversationId}\nUser: ${logEntry.userMessage}\nCarl: ${logEntry.carlResponse}\nSources: ${logEntry.sources.join(', ')}\n${'='.repeat(80)}\n`;
-      
-      appendFileSync(logPath, logLine);
-      console.log('Conversation logged successfully');
-    } catch (logError) {
-      console.error('Failed to log conversation:', logError);
-    }
+    // Log conversation for debugging, improvement
+  try {
+    await supabase
+      .from('conversation_logs')
+      .insert({
+        conversation_id: conversationId,
+        user_message: message,
+        carl_response: response,
+        user_ip: request.headers.get('x-forwarded-for') || 'unknown',
+        sources: context.sources
+      })
+  
+  console.log('Conversation logged to Supabase successfully')
+} catch (logError) {
+  console.error('Failed to log to Supabase:', logError)
+}
 
     const chatResponse: ChatResponse = {
       response,
