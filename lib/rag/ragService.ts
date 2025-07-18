@@ -35,7 +35,7 @@ export class RAGService {
       
     return {
       text: context,
-      sources: [...new Set(sources)], // Remove duplicates
+      sources: Array.from(new Set(sources)), // Remove duplicates
     };
     } catch (error) {
       console.error('RAG Service error:', error);
