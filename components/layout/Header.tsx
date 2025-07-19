@@ -2,7 +2,7 @@
 
 import { CloudWalkLogo } from '@/components/ui/CloudWalkLogo';
 import { Button } from '@/components/ui/button';
-import { Settings, Moon, Sun } from 'lucide-react';
+import { Settings, Bot, Moon, Sun } from 'lucide-react';
 import { useTheme } from 'next-themes';
 
 export function Header() {
@@ -11,7 +11,7 @@ export function Header() {
   return (
     <header className="h-16 bg-gray-900/90 backdrop-blur-sm border-b border-gray-700 flex items-center justify-between px-4 md:px-6">
       <div className="flex items-center gap-3">
-        <CloudWalkLogo />
+        <Bot size={24} />
         <div className="hidden md:block">
           <h1 className="text-xl font-bold text-white">Carl</h1>
           <p className="text-xs text-gray-400">CloudWalk AI Assistant</p>

@@ -1,16 +1,16 @@
 'use client';
 
-import { Sparkles, Brain, Zap, Globe } from 'lucide-react';
+import { Bot, Brain, Zap, Globe } from 'lucide-react';
 
 export function WelcomeMessage() {
   return (
     <div className="flex flex-col items-center justify-center min-h-[400px] text-center space-y-6">
       <div className="relative">
         <div className="w-20 h-20 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center">
-          <Sparkles size={32} className="text-white" />
+          <Bot size={32} className="text-white" />
         </div>
-        <div className="absolute -top-1 -right-1 w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center">
-          <Brain size={12} className="text-white" />
+         <div className="absolute -top-1 -right-1 w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center">
+          <Brain size={0} className="text-white" />
         </div>
       </div>
 
@@ -56,7 +56,7 @@ export function WelcomeMessage() {
       </div>
 
       <div className="text-sm text-gray-400 max-w-md">
-        Ask me anything about CloudWalk's journey, our wolfpack culture, or the philosophical foundations that guide our technological evolution.
+        Ask me anything about CloudWalk's journey, our culture, or the philosophical foundations that guide our technological evolution.
       </div>
     </div>
   );
