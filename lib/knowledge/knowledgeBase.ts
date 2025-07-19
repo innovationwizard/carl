@@ -12,14 +12,70 @@ export interface KnowledgeDocument {
 export class KnowledgeBase {
   private documents: KnowledgeDocument[] = [
     {
+      id: 'cloudwalk-mission',
+      content: `CloudWalk's mission is to create the best payment network on Earth. Then other planets. This audacious mission reflects our cosmic ambitions and unlimited thinking. We're not just building fintech products; we're creating the infrastructure for humanity's financial future across the cosmos. Our mission embodies the intersection of Carl Sagan's cosmic perspective and Carl Menger's market evolution theory. Just as Sagan envisioned humanity as a spacefaring civilization, we envision payments that transcend planetary boundaries. Our "Earth first, then other planets" approach shows we think in cosmic timescales while solving immediate market needs. This mission drives everything we do - from InfinitePay serving 1.2 million clients across Brazil to STRATUS blockchain handling 1,800 TPS, to our AI consciousness project exploring the future of intelligence. We're building the payment infrastructure for humanity's next evolutionary leap.`,
+      metadata: { 
+        source: 'CloudWalk Official',
+        category: 'company-mission',
+        title: 'CloudWalk Mission Statement',
+        text: 'Create the best payment network on Earth then other planets'    }
+    },
+    {
       id: 'cloudwalk-philosophy',
       content: `CloudWalk's core philosophy is "Technology built us" - we believe technology is not just a tool but the driving force of human evolution. Our approach is deeply rooted in technophilia, embracing recursive technological development where each advancement builds upon the last. We see ourselves as active participants in the cosmic evolution of consciousness through technology.`,
       metadata: {
         source: 'CloudWalk Philosophy',
         category: 'company-culture',
         title: 'Technology Built Us',
-        text: 'CloudWalk philosophy and technophilia approach',
-      },
+        text: 'CloudWalk philosophy and technophilia approach'  }
+    },
+    {
+      id: 'cloudwalk-pillars',
+      content: `CloudWalk operates on three foundational pillars that guide our mission to create the best payment network on Earth, then other planets:
+
+                **Best Product**
+                We deliver our services with the highest technological standards, featuring AI and Blockchain, compounded with top-notch user experience. This pillar reflects our belief that "technology built us" - we're not just using technology, we're pushing its boundaries. Our products like InfinitePay, STRATUS blockchain (1,800 TPS), and AI-powered fraud prevention ($2 billion prevented) exemplify this commitment to technological excellence.
+
+                **Customer Engagement** 
+                Our customers play a vital role in everything we do. They are our best sales promoters and also withhold the ability to change the product and the business at any time. This embodies Carl Menger's insights about market-driven evolution - the best solutions emerge from real customer needs, not top-down planning. Our 1.2 million InfinitePay clients across all Brazilian municipalities are partners in our cosmic journey.
+
+                **Disruptive Economics**
+                We aim to grant the best price for our customers to help them unlock purchasing power. We designed our business model to transform how merchants sell and profit. Like spontaneous order in markets, we create value by making commerce more efficient and accessible, democratizing financial technology across the cosmos of human economic activity.
+
+                These pillars work together to create CloudWalk's unique approach: cosmic ambition grounded in market reality, technological excellence serving human needs, and economic disruption that creates genuine value for all participants in our payment universe.`,
+      metadata: { 
+        source: 'CloudWalk Official',
+        category: 'company-pillars',
+        title: 'CloudWalk Three Pillars',
+        text: 'Best Product, Customer Engagement, Disruptive Economics'    }
+    },
+    {
+      id: 'cloudwalk-price-philosophy',
+      content: `The planet Earth payments industry and why price matters:
+
+                We are democratizing the financial industry, empowering entrepreneurs through technological, inclusive and life-changing solutions. The payment industry is evolving. But sellers are not reaping the benefits of price wars between big banks and acquirers. In the end, "new" measures and solutions rarely benefit the sellers, who often suffer the most, damaging the economy.
+
+                It's time to change. Our goal is to outsmart the system by building a new one that is fair for all players. This reflects our Disruptive Economics pillar - we're not just competing on price, we're fundamentally restructuring how value flows through the payments ecosystem. Like Carl Menger's theory of subjective value, we recognize that true worth comes from what merchants can actually achieve with our tools, not from artificial pricing schemes that favor incumbents.
+
+                This philosophy drives our cosmic mission: creating payment infrastructure that serves Earth's entrepreneurs today while building the foundation for interplanetary commerce tomorrow.`,
+      metadata: {
+        source: 'CloudWalk Official',
+        category: 'company-philosophy',
+        title: 'Payment Industry Philosophy',
+        text: 'Why price matters and democratizing financial industry'  }
+    },
+    {
+      id: 'cloudwalk-team-culture',
+      content: `We encourage a customer-centric, fast-paced, execution-focused and global mindset among our teams. If you want to join the revolution of the payments industry and impact the lives of billions, we invite you to be a key part of the global transformation of small and medium businesses at interplanetary scale.
+
+                This invitation reflects our wolfpack culture - we're not just hiring employees, we're recruiting fellow cosmic travelers who share our vision of democratizing financial technology across the universe. Our team operates with the urgency of cosmic evolution itself, moving fast because we understand that every day we delay, merchants somewhere on Earth are being held back by unfair payment systems.
+
+                Our global mindset isn't just about Earth markets - it's about building solutions that will scale from Brazilian municipalities to future human settlements throughout the solar system. We're preparing for the day when a merchant on Mars will need to process payments with customers on Europa, and our technology will make that as seamless as today's transactions across Brazilian states.`,
+      metadata: {
+        source: 'CloudWalk Official',
+        category: 'company-culture',
+        title: 'Team Culture and Global Mindset',
+        text: 'Customer-centric fast-paced execution-focused global transformation' }
     },
     {
       id: 'infinitepay-overview',
