@@ -30,24 +30,28 @@ export default function Home() {
         <Header />
         
         <div className="flex h-[calc(100vh-4rem)]">
-          {/* Mobile sidebar toggle */}
-          <button
-            onClick={() => setSidebarOpen(!sidebarOpen)}
-            className="md:hidden fixed top-20 left-4 z-50 p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors"
-            aria-label="Toggle sidebar"
-          >
-            {sidebarOpen ? <X size={20} /> : <Menu size={20} />}
-          </button>
+          {/* Mobile sidebar toggle - HIDDEN FOR THE TIME BEING */}
+          <div className="hidden">
+            <button
+              onClick={() => setSidebarOpen(!sidebarOpen)}
+              className="md:hidden fixed top-20 left-4 z-50 p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors"
+              aria-label="Toggle sidebar"
+            >
+              {sidebarOpen ? <X size={20} /> : <Menu size={20} />}
+            </button>
+          </div>
 
-          {/* Sidebar */}
-          <div className={`
-            ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}
-            md:translate-x-0 transition-transform duration-300 ease-in-out
-            fixed md:static inset-y-0 left-0 z-40
-            w-80 bg-gray-800/50 backdrop-blur-lg border-r border-gray-700
-            md:w-80 mt-16 md:mt-0
-          `}>
-            <Sidebar onClose={() => setSidebarOpen(false)} />
+          {/* Sidebar - HIDDEN FOR THE TIME BEING */}
+          <div className="hidden">
+            <div className={`
+              ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}
+              md:translate-x-0 transition-transform duration-300 ease-in-out
+              fixed md:static inset-y-0 left-0 z-40
+              w-80 bg-gray-800/50 backdrop-blur-lg border-r border-gray-700
+              md:w-80 mt-16 md:mt-0
+            `}>
+              <Sidebar onClose={() => setSidebarOpen(false)} />
+            </div>
           </div>
 
           {/* Main content */}
