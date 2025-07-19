@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   keywords: ['CloudWalk', 'AI', 'chatbot', 'fintech', 'Carl Sagan', 'Carl Menger'],
   authors: [{ name: 'CloudWalk Inc.' }],
   viewport: 'width=device-width, initial-scale=1',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', type: 'image/x-icon' }
+    ],
+    shortcut: '/favicon.ico'
+  }
 };
 
 export default function RootLayout({
