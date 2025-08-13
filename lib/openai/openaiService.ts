@@ -24,7 +24,7 @@ export class OpenAIService {
         },
         {
           role: 'system',
-          content: `Context from CloudWalk knowledge base:\n\n${context.text}`,
+          content: `Context from Carl Sagan knowledge base:\n\n${context.text}`,
         },
         ...history.map(msg => ({
           role: msg.role as 'user' | 'assistant',

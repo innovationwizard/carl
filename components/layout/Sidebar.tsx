@@ -149,7 +149,7 @@ export function Sidebar({ onClose }: SidebarProps) {
       {/* Footer */}
       <div className="p-4 border-t border-gray-700">
         <div className="text-xs text-gray-400 space-y-1">
-          <p>🐺 Powered by CloudWalk</p>
+          <p>⭐ Inspired by Carl Sagan</p>
           <p>💫 Carl v2.0 - Cosmic AI</p>
         </div>
       </div>

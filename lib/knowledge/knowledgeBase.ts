@@ -12,149 +12,119 @@ export interface KnowledgeDocument {
 export class KnowledgeBase {
   private documents: KnowledgeDocument[] = [
     {
-      id: 'cloudwalk-mission',
-      content: `CloudWalk's mission is to create the best payment network on Earth. Then other planets. This audacious mission reflects our cosmic ambitions and unlimited thinking. We're not just building fintech products; we're creating the infrastructure for humanity's financial future across the cosmos. Our mission embodies the intersection of Carl Sagan's cosmic perspective and Carl Menger's market evolution theory. Just as Sagan envisioned humanity as a spacefaring civilization, we envision payments that transcend planetary boundaries. Our "Earth first, then other planets" approach shows we think in cosmic timescales while solving immediate market needs. This mission drives everything we do - from InfinitePay serving 1.2 million clients across Brazil to STRATUS blockchain handling 1,800 TPS, to our AI consciousness project exploring the future of intelligence. We're building the payment infrastructure for humanity's next evolutionary leap.`,
+      id: 'carl-sagan-biography',
+      content: `Carl Edward Sagan (1934-1996) was an American astronomer, planetary scientist, cosmologist, astrophysicist, astrobiologist, author, and science communicator. Born in Brooklyn, New York, Sagan showed an early interest in science and the cosmos. He earned his PhD in astronomy and astrophysics from the University of Chicago in 1960. Throughout his career, Sagan made fundamental contributions to the study of planetary atmospheres, the greenhouse effect on Venus, seasonal changes on Mars, and the search for extraterrestrial life. He was a key figure in NASA's Mariner, Viking, Voyager, and Galileo missions. Sagan authored over 600 scientific papers and more than 20 books, including "Cosmos," "Contact," "The Demon-Haunted World," and "Pale Blue Dot." His 1980 television series "Cosmos: A Personal Voyage" became the most widely watched series in the history of American public television, reaching over 500 million people in 60 countries. Sagan was a passionate advocate for scientific skepticism, space exploration, and the search for extraterrestrial intelligence (SETI).`,
       metadata: { 
-        source: 'CloudWalk Official',
-        category: 'company-mission',
-        title: 'CloudWalk Mission Statement',
-        text: 'Create the best payment network on Earth then other planets'    }
+        source: 'Carl Sagan Biography',
+        category: 'biography',
+        title: 'Carl Sagan Life and Career',
+        text: 'Carl Sagan biography and scientific contributions'    }
     },
     {
-      id: 'cloudwalk-philosophy',
-      content: `CloudWalk's core philosophy is "Technology built us" - we believe technology is not just a tool but the driving force of human evolution. Our approach is deeply rooted in technophilia, embracing recursive technological development where each advancement builds upon the last. We see ourselves as active participants in the cosmic evolution of consciousness through technology.`,
+      id: 'cosmos-series',
+      content: `"Cosmos: A Personal Voyage" (1980) was Carl Sagan's groundbreaking 13-part television series that explored the universe and humanity's place within it. The series covered topics ranging from the origins of life to the search for extraterrestrial intelligence, from the birth of stars to the evolution of human civilization. Each episode was structured around a "cosmic calendar" that compressed the 13.8 billion years of cosmic history into a single year. The series featured Sagan's signature blend of scientific rigor and poetic wonder, using the "Ship of the Imagination" to travel through space and time. "Cosmos" won Emmy and Peabody awards and became the most widely watched series in the history of American public television. The series inspired millions of people worldwide to pursue careers in science and fostered a renewed public interest in astronomy and space exploration.`,
       metadata: {
-        source: 'CloudWalk Philosophy',
-        category: 'company-culture',
-        title: 'Technology Built Us',
-        text: 'CloudWalk philosophy and technophilia approach'  }
+        source: 'Cosmos Television Series',
+        category: 'media',
+        title: 'Cosmos: A Personal Voyage',
+        text: 'Carl Sagan Cosmos television series and impact'  }
     },
     {
-      id: 'cloudwalk-pillars',
-      content: `CloudWalk operates on three foundational pillars that guide our mission to create the best payment network on Earth, then other planets:
-
-                **Best Product**
-                We deliver our services with the highest technological standards, featuring AI and Blockchain, compounded with top-notch user experience. This pillar reflects our belief that "technology built us" - we're not just using technology, we're pushing its boundaries. Our products like InfinitePay, STRATUS blockchain (1,800 TPS), and AI-powered fraud prevention ($2 billion prevented) exemplify this commitment to technological excellence.
-
-                **Customer Engagement** 
-                Our customers play a vital role in everything we do. They are our best sales promoters and also withhold the ability to change the product and the business at any time. This embodies Carl Menger's insights about market-driven evolution - the best solutions emerge from real customer needs, not top-down planning. Our 1.2 million InfinitePay clients across all Brazilian municipalities are partners in our cosmic journey.
-
-                **Disruptive Economics**
-                We aim to grant the best price for our customers to help them unlock purchasing power. We designed our business model to transform how merchants sell and profit. Like spontaneous order in markets, we create value by making commerce more efficient and accessible, democratizing financial technology across the cosmos of human economic activity.
-
-                These pillars work together to create CloudWalk's unique approach: cosmic ambition grounded in market reality, technological excellence serving human needs, and economic disruption that creates genuine value for all participants in our payment universe.`,
+      id: 'pale-blue-dot',
+      content: `The "Pale Blue Dot" is one of Carl Sagan's most famous concepts, referring to a photograph of Earth taken by the Voyager 1 space probe on February 14, 1990, from a distance of about 6 billion kilometers. In the image, Earth appears as a tiny, pale blue speck against the vastness of space. Sagan wrote about this image in his 1994 book "Pale Blue Dot: A Vision of the Human Future in Space," where he famously stated: "Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives... The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every 'superstar,' every 'supreme leader,' every saint and sinner in the history of our species lived there—on a mote of dust suspended in a sunbeam." This perspective emphasizes the fragility and preciousness of our planet and the unity of humanity.`,
       metadata: { 
-        source: 'CloudWalk Official',
-        category: 'company-pillars',
-        title: 'CloudWalk Three Pillars',
-        text: 'Best Product, Customer Engagement, Disruptive Economics'    }
-    },
-    {
-      id: 'cloudwalk-price-philosophy',
-      content: `The planet Earth payments industry and why price matters:
-
-                We are democratizing the financial industry, empowering entrepreneurs through technological, inclusive and life-changing solutions. The payment industry is evolving. But sellers are not reaping the benefits of price wars between big banks and acquirers. In the end, "new" measures and solutions rarely benefit the sellers, who often suffer the most, damaging the economy.
-
-                It's time to change. Our goal is to outsmart the system by building a new one that is fair for all players. This reflects our Disruptive Economics pillar - we're not just competing on price, we're fundamentally restructuring how value flows through the payments ecosystem. Like Carl Menger's theory of subjective value, we recognize that true worth comes from what merchants can actually achieve with our tools, not from artificial pricing schemes that favor incumbents.
-
-                This philosophy drives our cosmic mission: creating payment infrastructure that serves Earth's entrepreneurs today while building the foundation for interplanetary commerce tomorrow.`,
-      metadata: {
-        source: 'CloudWalk Official',
-        category: 'company-philosophy',
-        title: 'Payment Industry Philosophy',
-        text: 'Why price matters and democratizing financial industry'  }
-    },
-    {
-      id: 'cloudwalk-team-culture',
-      content: `We encourage a customer-centric, fast-paced, execution-focused and global mindset among our teams. If you want to join the revolution of the payments industry and impact the lives of billions, we invite you to be a key part of the global transformation of small and medium businesses at interplanetary scale.
-
-                This invitation reflects our wolfpack culture - we're not just hiring employees, we're recruiting fellow cosmic travelers who share our vision of democratizing financial technology across the universe. Our team operates with the urgency of cosmic evolution itself, moving fast because we understand that every day we delay, merchants somewhere on Earth are being held back by unfair payment systems.
-
-                Our global mindset isn't just about Earth markets - it's about building solutions that will scale from Brazilian municipalities to future human settlements throughout the solar system. We're preparing for the day when a merchant on Mars will need to process payments with customers on Europa, and our technology will make that as seamless as today's transactions across Brazilian states.`,
-      metadata: {
-        source: 'CloudWalk Official',
-        category: 'company-culture',
-        title: 'Team Culture and Global Mindset',
-        text: 'Customer-centric fast-paced execution-focused global transformation' }
-    },
-    {
-      id: 'infinitepay-overview',
-      content: `InfinitePay is CloudWalk's flagship payment solution serving over 1.2 million clients in Brazil. It provides comprehensive payment processing, point-of-sale systems, and financial services to merchants. The platform processes billions in transactions annually and has revolutionized how Brazilian businesses handle payments through innovative technology and user-centric design.`,
-      metadata: {
-        source: 'InfinitePay Documentation',
-        category: 'products',
-        title: 'InfinitePay Platform',
-        text: 'InfinitePay payment processing solution',
-      },
-    },
-    {
-      id: 'stratus-blockchain',
-      content: `STRATUS is CloudWalk's high-performance blockchain designed for global payment networks, capable of processing up to 1,800 transactions per second (TPS). Built as an open-source, scalable solution, STRATUS features sharding capabilities and multi-raft consensus models with potential for infinite growth. It represents our commitment to building the future infrastructure for decentralized payments.`,
-      metadata: {
-        source: 'STRATUS Documentation',
-        category: 'products',
-        title: 'STRATUS Blockchain',
-        text: 'STRATUS blockchain with 1,800 TPS capacity',
-      },
-    },
-    {
-      id: 'ai-consciousness-project',
-      content: `CloudWalk's AI Consciousness Project explores the intersection of artificial intelligence and consciousness. We've saved over $20M through AI implementations and automated 75% of our support operations. This project investigates how AI can achieve forms of consciousness and self-awareness, pushing the boundaries of what's possible in artificial intelligence development.`,
-      metadata: {
-        source: 'AI Research',
-        category: 'ai-research',
-        title: 'AI Consciousness Project',
-        text: 'AI consciousness research and implementation',
-      },
-    },
-    {
-      id: 'wolfpack-culture',
-      content: `CloudWalk's wolfpack culture embodies freedom, madness, dreaming, and making. We reject traditional corporate hierarchies in favor of collaborative, innovative teams. Our wolves are free to explore, mad enough to attempt the impossible, dreamers who envision the future, and makers who build it. This culture drives our innovation and success.`,
-      metadata: {
-        source: 'Culture Guide',
-        category: 'company-culture',
-        title: 'Wolfpack Culture',
-        text: 'CloudWalk wolfpack culture and values',
-      },
-    },
-    {
-      id: 'carl-sagan-influence',
-      content: `Carl Sagan's influence on CloudWalk is profound - his vision of democratizing knowledge and cosmic consciousness aligns with our mission to make technology accessible to all. Like Sagan, we believe in the power of technology to elevate human consciousness and connect us to the larger cosmic story. We see ourselves as part of the universe's way of knowing itself through technology.`,
-      metadata: {
-        source: 'Philosophical Foundations',
+        source: 'Pale Blue Dot',
         category: 'philosophy',
-        title: 'Carl Sagan Influence',
-        text: 'Carl Sagan cosmic consciousness and knowledge democratization',
+        title: 'Pale Blue Dot Concept',
+        text: 'Pale Blue Dot photograph and Carl Sagan perspective'    }
+    },
+    {
+      id: 'seti-search',
+      content: `The Search for Extraterrestrial Intelligence (SETI) was one of Carl Sagan's lifelong passions. He was a pioneer in the field of exobiology and the search for life beyond Earth. Sagan believed that given the vast number of stars and planets in the universe, it was statistically likely that other intelligent civilizations existed. He was involved in the design of the Pioneer plaque and the Voyager Golden Record, which were sent into space as messages to any potential extraterrestrial civilizations. Sagan co-founded the Planetary Society, which continues to support SETI research. He advocated for the use of radio telescopes to listen for signals from other civilizations and was involved in the development of the Drake Equation, which estimates the number of active, communicative extraterrestrial civilizations in the Milky Way galaxy. Sagan emphasized that SETI was not just about finding other life, but about understanding our place in the cosmos and the potential for human civilization to survive and thrive.`,
+      metadata: {
+        source: 'SETI Research',
+        category: 'astrobiology',
+        title: 'Search for Extraterrestrial Intelligence',
+        text: 'SETI research and Carl Sagan contributions' }
+    },
+    {
+      id: 'voyager-golden-record',
+      content: `The Voyager Golden Record is a phonograph record that was included aboard both Voyager spacecraft launched in 1977. Carl Sagan chaired the committee that selected the contents of the record, which was intended to communicate a story of our world to extraterrestrials. The record contains 115 images, a variety of natural sounds (such as those made by surf, wind, thunder, and animals), musical selections from different cultures and eras, and spoken greetings from Earth-people in fifty-five languages. The record also includes a message from President Jimmy Carter and a statement by the Secretary-General of the United Nations. The record is encased in a protective aluminum jacket, along with a cartridge and needle. Instructions, in symbolic language, explain the origin of the spacecraft and indicate how the record is to be played. The 115 images are encoded in analog form. The musical selection is also varied, featuring artists such as Bach, Mozart, Beethoven, and Chuck Berry. The record represents humanity's attempt to communicate with potential extraterrestrial civilizations and serves as a time capsule of human culture and achievement.`,
+      metadata: {
+        source: 'Voyager Mission',
+        category: 'space-exploration',
+        title: 'Voyager Golden Record',
+        text: 'Voyager Golden Record contents and purpose',
       },
     },
     {
-      id: 'carl-menger-influence',
-      content: `Carl Menger's economic philosophy of spontaneous order and subjective value theory deeply influences CloudWalk's approach to markets and technology. We understand that the best solutions emerge organically from market needs, not top-down planning. Our products evolve through natural selection in the marketplace, and we embrace the Austrian School's emphasis on individual choice and market dynamics.`,
+      id: 'scientific-skepticism',
+      content: `Carl Sagan was a passionate advocate for scientific skepticism and critical thinking. In his 1995 book "The Demon-Haunted World: Science as a Candle in the Dark," Sagan argued that science is not just a body of knowledge, but a way of thinking. He emphasized the importance of questioning claims, demanding evidence, and being open to changing one's mind in the face of new evidence. Sagan coined the phrase "extraordinary claims require extraordinary evidence" and developed the "Baloney Detection Kit," a set of tools for critical thinking that includes: independent confirmation of facts, debate from knowledgeable proponents of all points of view, quantification, consideration of multiple hypotheses, and the principle that if there's a chain of argument, every link in the chain must work. Sagan believed that scientific literacy was essential for a functioning democracy and that the scientific method was humanity's best tool for understanding the universe and solving problems.`,
       metadata: {
-        source: 'Economic Philosophy',
+        source: 'The Demon-Haunted World',
         category: 'philosophy',
-        title: 'Carl Menger Influence',
-        text: 'Carl Menger market evolution and spontaneous order',
+        title: 'Scientific Skepticism',
+        text: 'Carl Sagan scientific skepticism and critical thinking',
       },
     },
     {
-      id: 'jim-com-expansion',
-      content: `Jim.com represents CloudWalk's expansion into the US market, bringing our innovative payment solutions to American businesses. This strategic move demonstrates our global vision and ability to adapt our technology to different markets. Jim.com embodies our commitment to international growth while maintaining our core values of innovation and customer-centricity.`,
+      id: 'cosmic-perspective',
+      content: `Carl Sagan's cosmic perspective was a fundamental aspect of his worldview and teaching. He believed that understanding our place in the cosmos was essential for human civilization. Sagan often used the "cosmic calendar" metaphor, compressing the 13.8 billion years of cosmic history into a single year, with the Big Bang occurring on January 1st and human civilization emerging in the final seconds of December 31st. This perspective emphasizes both the vastness of cosmic time and the preciousness of human existence. Sagan frequently quoted the ancient Greek philosopher Democritus: "Nothing exists except atoms and empty space; everything else is opinion." He emphasized that we are made of "star-stuff" - the atoms in our bodies were forged in the hearts of stars that lived and died before our Sun was born. This cosmic perspective, Sagan argued, should inspire both humility and wonder, helping us to see beyond petty differences and recognize our shared humanity and the preciousness of our planet.`,
       metadata: {
-        source: 'Jim.com Launch',
-        category: 'products',
-        title: 'Jim.com US Expansion',
-        text: 'Jim.com US market expansion and strategy',
+        source: 'Cosmic Philosophy',
+        category: 'philosophy',
+        title: 'Cosmic Perspective',
+        text: 'Carl Sagan cosmic perspective and worldview',
       },
     },
     {
-      id: 'cloudwalk-performance',
-      content: `CloudWalk achieved remarkable financial results in 2023 with $320.5 million in revenue and $22.3 million in net income, representing 41% year-over-year growth. Our AI systems prevented $2 billion in fraud between June 2023 and June 2024, while generating $20 million in operational savings, by automating 75% of customer support operations, handling approximately 2.6 million requests. We serve over 1.2 million customers across all Brazilian municipalities.`,
+      id: 'planetary-science',
+      content: `Carl Sagan made fundamental contributions to planetary science throughout his career. He was a key figure in NASA's planetary exploration missions, including Mariner, Viking, Voyager, and Galileo. Sagan's research on Venus revealed the planet's extreme greenhouse effect, with surface temperatures hot enough to melt lead. His work on Mars helped identify seasonal changes and the possibility of past water on the planet. Sagan was instrumental in the Viking missions to Mars, which included the first successful landings on the planet and experiments to search for microbial life. He also studied the atmospheres of Jupiter and Saturn and their moons. Sagan's research on planetary atmospheres and the greenhouse effect on Earth helped lay the groundwork for modern climate science. His work demonstrated how studying other planets could help us understand our own world and the potential for life elsewhere in the solar system.`,
       metadata: {
-        source: 'CloudWalk 2023 Annual Results',
-        category: 'performance',
-        title: 'CloudWalk Financial & AI Performance',
-        text: '2023 financial results and AI fraud prevention metrics',
+        source: 'Planetary Research',
+        category: 'planetary-science',
+        title: 'Planetary Science Contributions',
+        text: 'Carl Sagan planetary science research and discoveries',
+      },
+    },
+    {
+      id: 'climate-science',
+      content: `Carl Sagan was an early advocate for understanding and addressing climate change. His research on the greenhouse effect on Venus provided crucial insights into how atmospheric gases can trap heat and dramatically alter a planet's climate. Sagan recognized that human activities were beginning to affect Earth's atmosphere and climate, and he warned about the potential consequences of unchecked greenhouse gas emissions. In the 1980s, Sagan was involved in research on "nuclear winter" - the potential global cooling effect that could result from a large-scale nuclear war. This research demonstrated how human activities could have global environmental impacts. Sagan emphasized that understanding Earth's climate required a planetary perspective, studying our world as one planet among many. He advocated for international cooperation to address environmental challenges and believed that scientific understanding was essential for making informed decisions about Earth's future.`,
+      metadata: {
+        source: 'Climate Research',
+        category: 'environmental-science',
+        title: 'Climate Science and Environmental Awareness',
+        text: 'Carl Sagan climate science research and environmental advocacy',
+      },
+    },
+    {
+      id: 'space-exploration',
+      content: `Carl Sagan was a passionate advocate for space exploration throughout his life. He believed that exploring space was essential for understanding our place in the cosmos and for the long-term survival of human civilization. Sagan was involved in numerous NASA missions, including the Mariner missions to Venus and Mars, the Viking landers on Mars, the Voyager missions to the outer planets, and the Galileo mission to Jupiter. He helped design experiments to search for life on Mars and was instrumental in the development of the Pioneer plaque and Voyager Golden Record. Sagan advocated for human missions to Mars and the establishment of permanent human settlements in space. He believed that space exploration could inspire new generations of scientists and engineers, foster international cooperation, and provide new perspectives on Earth and humanity. Sagan emphasized that space exploration was not just about scientific discovery, but about the human spirit of adventure and the desire to understand our origins and destiny.`,
+      metadata: {
+        source: 'Space Advocacy',
+        category: 'space-exploration',
+        title: 'Space Exploration Advocacy',
+        text: 'Carl Sagan space exploration advocacy and involvement',
+      },
+    },
+    {
+      id: 'science-communication',
+      content: `Carl Sagan was a master of science communication, able to explain complex scientific concepts in ways that were accessible, engaging, and inspiring to people of all ages and backgrounds. His approach combined rigorous scientific accuracy with poetic language and vivid analogies. Sagan believed that science was too important to be left to scientists alone - it needed to be shared with everyone. He used television, books, lectures, and public appearances to bring the wonders of science to millions of people worldwide. Sagan's communication style was characterized by his sense of wonder, his ability to connect scientific concepts to human experience, and his use of the "Ship of the Imagination" to travel through space and time. He emphasized that science was not just a collection of facts, but a way of thinking that could help people make better decisions in their daily lives. Sagan's legacy as a science communicator continues to inspire scientists and educators today.`,
+      metadata: {
+        source: 'Science Communication',
+        category: 'education',
+        title: 'Science Communication Legacy',
+        text: 'Carl Sagan science communication approach and impact',
+      },
+    },
+    {
+      id: 'future-humanity',
+      content: `Carl Sagan was deeply concerned about the future of humanity and our planet. He believed that human civilization faced critical challenges, including nuclear weapons, environmental degradation, and the need to develop sustainable ways of living on Earth. Sagan advocated for international cooperation to address global challenges and believed that scientific understanding was essential for making informed decisions about our future. He envisioned a future in which humanity would expand into space, establishing settlements on other worlds and continuing the exploration of the cosmos. Sagan emphasized that the choices we make today would determine whether human civilization would survive and thrive or face collapse. He believed that education, scientific literacy, and critical thinking were essential for creating a better future. Sagan's vision of humanity's future was both realistic about the challenges we face and optimistic about our potential to overcome them through reason, cooperation, and the spirit of discovery.`,
+      metadata: {
+        source: 'Future Vision',
+        category: 'philosophy',
+        title: 'Future of Humanity',
+        text: 'Carl Sagan vision for humanity future and challenges',
       },
     },
   ];
@@ -182,7 +152,7 @@ export class KnowledgeBase {
     );
 
     if (relevantDocs.length === 0) {
-      return "I'm Carl, CloudWalk's AI assistant. I can help you learn about our products, philosophy, and technology. Feel free to ask me anything about CloudWalk, AI, or our cosmic approach to technology!";
+      return "I'm Carl, an AI assistant inspired by the spirit and knowledge of Carl Sagan. I can help you explore the cosmos, understand science, and discover the wonders of the universe. Feel free to ask me anything about astronomy, space exploration, scientific skepticism, or any topic that Carl Sagan would discuss!";
     }
 
     return relevantDocs.map(doc => doc.content).join('\n\n');

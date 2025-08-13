@@ -14,7 +14,7 @@ export class PineconeService {
     this.pinecone = new Pinecone({
       apiKey: process.env.PINECONE_API_KEY || '',
     });
-    this.indexName = process.env.PINECONE_INDEX_NAME || 'cloudwalk-carl';
+    this.indexName = process.env.PINECONE_INDEX_NAME || 'carl-sagan';
     
     console.log('🔧 Pinecone SDK initialized for index:', this.indexName);
   }

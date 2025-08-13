@@ -96,7 +96,7 @@ export function ConversationProvider({ children }: { children: React.ReactNode }
   useEffect(() => {
     const defaultConversation: Conversation = {
       id: uuidv4(),
-      title: 'Welcome to CloudWalk',
+      title: 'Welcome to the Cosmos',
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
       lastMessage: '',

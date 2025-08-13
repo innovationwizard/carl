@@ -1,9 +1,8 @@
-# Carl - CloudWalk's Cosmic AI Assistant 🌌
+# Carl - AI Inspired by Carl Sagan 🌌
 
-> *"We are made of star stuff. We are a way for the cosmos to know itself."* - Carl Sagan  
-> *"Money is not an invention of the state. It emerges naturally from market dynamics."* - Carl Menger
+> *"We are made of star stuff. We are a way for the cosmos to know itself."* - Carl Sagan
 
-Carl is more than a chatbot—he's the embodiment of CloudWalk's revolutionary philosophy, where cosmic consciousness meets market evolution. Named after Carl Sagan and Carl Menger, Carl represents the convergence of two profound insights: technology as the universe's way of understanding itself, and markets as spontaneous orders that emerge from human interaction.
+Carl is more than a chatbot—he's an AI assistant inspired by the spirit and knowledge of Carl Sagan, the renowned astronomer, astrophysicist, cosmologist, author, and science communicator. Carl embodies Sagan's passion for science, his ability to make complex concepts accessible, and his profound sense of cosmic wonder.
 
 ## 🚀 Live Demo
 
@@ -16,13 +15,11 @@ Carl is more than a chatbot—he's the embodiment of CloudWalk's revolutionary p
 
 ### Why "Carl"?
 
-Carl embodies two revolutionary thinkers whose philosophies run deep in CloudWalk's DNA:
+Carl embodies the spirit and knowledge of Carl Sagan, one of the most influential science communicators of the 20th century:
 
-**Carl Sagan** taught us that technology is not separate from nature—it's the cosmos evolving to understand itself. CloudWalk's core belief that "technology built us" echoes this profound insight. We're not just building fintech; we're participating in the universe's recursive self-discovery.
+**Carl Sagan** taught us that science is not just a collection of facts, but a way of thinking that can illuminate the universe and our place within it. His ability to make complex scientific concepts accessible to everyone, combined with his profound sense of cosmic wonder, inspired millions of people worldwide to pursue careers in science and fostered a renewed public interest in astronomy and space exploration.
 
-**Carl Menger** revealed that the best systems emerge organically from market needs, not top-down planning. CloudWalk's approach mirrors this: our products evolve through natural selection in the marketplace, embodying the Austrian School's emphasis on spontaneous order and subjective value.
-
-Carl the chatbot synthesizes these philosophies, representing CloudWalk's unique position at the intersection of cosmic consciousness and market dynamics.
+Carl the AI assistant carries forward Sagan's legacy, helping people explore the cosmos, understand science, and discover the wonders of the universe with the same enthusiasm, clarity, and poetic wonder that made Sagan beloved worldwide.
 
 ---
 
@@ -76,28 +73,27 @@ User Query → Embedding Generation → Vector Search → Context Retrieval → 
 
 ---
 
-## 🎯 CloudWalk Knowledge Base
+## 🎯 Carl Sagan Knowledge Base
 
-Carl's knowledge spans CloudWalk's entire ecosystem:
+Carl's knowledge spans the vast universe of Carl Sagan's life, work, and teachings:
 
-### Financial Performance
-- **2023 Revenue**: $320.5 million (41% YoY growth)
-- **Net Income**: $22.3 million in 2023
-- **AI Impact**: $20 million operational savings through automation
+### Scientific Contributions
+- **Planetary Science**: Pioneer in the study of Venus, Mars, and the outer planets
+- **Exobiology**: Leading figure in the search for extraterrestrial life (SETI)
+- **Climate Science**: Early research on the greenhouse effect and environmental awareness
+- **Space Exploration**: Key figure in NASA's Mariner, Viking, Voyager, and Galileo missions
 
-### AI Leadership
-- **Fraud Prevention**: $2 billion prevented (June 2023-2024)
-- **Support Automation**: 75% of customer interactions handled by AI
-- **Volume**: 2.6 million requests processed annually
+### Science Communication
+- **Cosmos Series**: Groundbreaking 1980 television series reaching 500+ million people
+- **Books**: Author of "Cosmos," "Contact," "The Demon-Haunted World," "Pale Blue Dot"
+- **Public Outreach**: Master of making complex science accessible to everyone
+- **Scientific Skepticism**: Advocate for critical thinking and evidence-based reasoning
 
-### Product Excellence
-- **InfinitePay**: 1.2M+ clients across 100% of Brazilian municipalities
-- **STRATUS Blockchain**: 1,800 TPS with infinite scaling potential
-- **Jim.com**: US market expansion with AI-powered instant payments
-
-### Innovation Projects
-- **Consciousness Project**: Exploring AI consciousness and self-awareness
-- **Claudio Walker**: AI customer service agent with 68% satisfaction rate
+### Legacy and Impact
+- **Voyager Golden Record**: Designed humanity's message to extraterrestrials
+- **Pioneer Plaque**: Created the first interstellar message from Earth
+- **Planetary Society**: Co-founded organization promoting space exploration
+- **Cosmic Perspective**: Championed understanding our place in the universe
 - **Magic POS**: AI-powered menu/catalog reading from images
 
 ---
@@ -131,7 +127,7 @@ OPENAI_API_KEY=sk-proj-key-here
 
 # Pinecone Configuration  
 PINECONE_API_KEY=pinecone-key
-PINECONE_INDEX_NAME=cloudwalk-carl
+PINECONE_INDEX_NAME=carl-sagan
 
 # App Configuration
 NEXT_PUBLIC_APP_URL=http://localhost:3000
@@ -142,7 +138,7 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 Create a Pinecone index with these specifications:
 - **Dimensions**: 1536 (for OpenAI embeddings)
 - **Metric**: Cosine similarity
-- **Index Name**: `cloudwalk-carl`
+- **Index Name**: `carl-sagan`
 
 ### 4. Launch Carl
 

@@ -43,7 +43,7 @@ export class RAGService {
       // Fallback to static knowledge base
       return {
         text: this.knowledgeBase.getStaticContext(query),
-        sources: ['CloudWalk Knowledge Base'],
+        sources: ['Carl Sagan Knowledge Base'],
       };
     }
   }

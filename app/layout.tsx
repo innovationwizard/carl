@@ -6,16 +6,18 @@ import { ThemeProvider } from 'next-themes';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Carl - CloudWalk AI Assistant',
-  description: 'CloudWalk AI chatbot embodying cosmic consciousness and market evolution',
-  keywords: ['CloudWalk', 'AI', 'chatbot', 'fintech', 'Carl Sagan', 'Carl Menger'],
-  authors: [{ name: 'CloudWalk Inc.' }],
-  viewport: 'width=device-width, initial-scale=1',
+      title: 'Carl - AI Inspired by Carl Sagan',
+    description: 'AI assistant inspired by Carl Sagan, exploring the cosmos and scientific wonder',
+    keywords: ['Carl Sagan', 'AI', 'astronomy', 'cosmology', 'space exploration', 'science communication'],
+    authors: [{ name: 'Carl Sagan Legacy' }],
+  viewport: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no',
   icons: {
-    icon: [
-      { url: '/favicon.ico', type: 'image/x-icon' }
-    ],
-    shortcut: '/favicon.ico'
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg'
+  },
+  other: {
+    'link[rel="icon"]': '/favicon.svg'
   }
 };
 
@@ -26,6 +28,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" />
+        <link rel="shortcut icon" href="/favicon.svg?v=2" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/favicon.svg?v=2" type="image/svg+xml" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"

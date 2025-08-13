@@ -41,18 +41,36 @@ export function ChatInterface() {
     }
   };
 
+  // If no messages, show welcome screen with centered input
+  if (messages.length === 0) {
+    return (
+      <div className="flex flex-col h-full">
+        <div className="flex-1 flex flex-col items-center justify-center p-4 md:p-6">
+          <WelcomeMessage />
+          
+          {/* Centered input field */}
+          <div className="w-full max-w-2xl mt-8">
+            <MessageInput
+              value={inputMessage}
+              onChange={setInputMessage}
+              onSend={handleSendMessage}
+              onKeyPress={handleKeyPress}
+              disabled={isLoading}
+              placeholder="Ask Carl about astronomy, space exploration, or the wonders of the cosmos..."
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // If there are messages, show normal chat layout
   return (
     <div className="flex flex-col h-full">
       {/* Chat messages */}
       <div className="flex-1 overflow-y-auto p-4 md:p-6 space-y-4">
-        {messages.length === 0 ? (
-          <WelcomeMessage />
-        ) : (
-          <>
-            <MessageList messages={messages} />
-            {isLoading && <TypingIndicator />}
-          </>
-        )}
+        <MessageList messages={messages} />
+        {isLoading && <TypingIndicator />}
         <div ref={messagesEndRef} />
       </div>
 
@@ -64,7 +82,7 @@ export function ChatInterface() {
           onSend={handleSendMessage}
           onKeyPress={handleKeyPress}
           disabled={isLoading}
-          placeholder="Ask Carl about CloudWalk, AI, or the cosmic nature of technology..."
+          placeholder="Ask Carl about astronomy, space exploration, or the wonders of the cosmos..."
         />
       </div>
     </div>
