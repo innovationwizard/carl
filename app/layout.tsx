@@ -6,7 +6,7 @@ import { ThemeProvider } from 'next-themes';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-      title: 'Carl - AI Inspired by Carl Sagan',
+      title: 'Carl - Cosmic AI Chatbot ✨',
     description: 'AI assistant inspired by Carl Sagan, exploring the cosmos and scientific wonder',
     keywords: ['Carl Sagan', 'AI', 'astronomy', 'cosmology', 'space exploration', 'science communication'],
     authors: [{ name: 'Carl Sagan Legacy' }],
