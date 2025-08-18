@@ -13,7 +13,7 @@ export function Header() {
       <div className="flex items-center gap-3">
         <CarlSaganLogo />
         <div className="hidden md:block">
-          <h1 className="text-xl font-bold text-white">Cosmic AI Chatbot ✨</h1>
+          <h1 className="text-sm font-bold text-white">Cosmic AI Chatbot ✨</h1>
           <p className="text-xs text-gray-400">Inspired by Carl Sagan</p>
         </div>
       </div>
